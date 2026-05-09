@@ -9,6 +9,10 @@ type ServerConfig = {
   PORT: number;
   NODE_ENV: string;
   MONGO_URI: string;
+
+  CLOUDINARY_CLOUD_NAME: string;
+  CLOUDINARY_API_KEY: string;
+  CLOUDINARY_API_SECRET: string;
 };
 
 // =========================================
@@ -38,4 +42,11 @@ export const serverConfig: ServerConfig = {
   // DATABASE CONFIGURATION
   // =========================================
   MONGO_URI: getEnvVariable("MONGO_URI"),
+
+  // =========================================
+  // CLOUDINARY CONFIGURATION
+  // =========================================
+  CLOUDINARY_CLOUD_NAME: getEnvVariable("CLOUDINARY_CLOUD_NAME"),
+  CLOUDINARY_API_KEY: getEnvVariable("CLOUDINARY_API_KEY"),
+  CLOUDINARY_API_SECRET: getEnvVariable("CLOUDINARY_API_SECRET"),
 };

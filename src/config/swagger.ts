@@ -28,6 +28,13 @@ const options: Options = {
     ],
 
     components: {
+      securitySchemes: {
+        bearerAuth: {
+          type: "http",
+          scheme: "bearer",
+          bearerFormat: "JWT",
+        },
+      },
       schemas: {
         Task: {
           type: "object",

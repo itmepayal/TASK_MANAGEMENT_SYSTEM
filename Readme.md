@@ -1,4 +1,4 @@
-# 📈 Production-Grade Task Management REST API
+# 📈 Task Management REST API
 
 ## 📌 Overview
 

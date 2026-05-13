@@ -24,7 +24,7 @@ taskRouter.use(isProtected);
 /* =========================================================
 GET ALL TASKS
 ========================================================= */
-taskRouter.get("/", adminOnly, getTasks);
+taskRouter.get("/", getTasks);
 
 /* =========================================================
 GET SINGLE TASK
